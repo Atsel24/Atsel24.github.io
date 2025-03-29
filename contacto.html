@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículum - Axel Arath Escobedo Reyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f5f7ed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+            
+      }
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
+      .text-section {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .image-section img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .highlight-text {
+        color: #7b8f6a;
+        font-weight: bold;
+      }
+      .highlight-text2 {
+        color: #0f110e;
+        font-weight: bold;
+      }
+     
+      .logo {
+            height: 40px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Distribuir los elementos del menú */
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px; /* Añadir espacio adicional a los lados del navbar */
+        }
+        .navbar .brand-container {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .brand-container h1 {
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #658433;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly; /* Distribuir los elementos de forma equitativa */
+            width: 100%;
+        }
+
+      .contact-icons {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .contact-icons a img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+      .contact-icons a img:hover {
+        transform: scale(1.1);
+      }
+
+      .footer {
+        width: 100%;
+        background-color: #658433; /* Color de fondo del footer */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px; /* Espacio entre el carrusel y el footer */
+        position: relative;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        height: 20px; /* Tamaño pequeño del logo */
+        margin-right: 10px;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 30px;
+        }
+        .contacto {
+            background-color: #7b8f6a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+            max-width: 400px;
+            width: 100%;
+        }
+        .contacto img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .email, .telefono {
+            font-weight: bold;
+        }
+        .boton {
+            display: inline-block;
+            background-color: #658433;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .boton:hover {
+            background-color: #556d2f;
+        }
+
+        .form-container{
+            background-color: #7b8f6a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1500px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input, textarea, button {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #556d2f;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5e6f4f;
+        }
+        .divider {
+            width: 80%;
+            height: 5px;
+            background-color: #658433;
+            margin: 40px auto;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="ProyectoFinal.html">
+          <img src="25694.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="horario.html">Horario</a></li>
+            <li class="nav-item"><a class="nav-link" href="estudios.html">Estudios realizados</a></li>
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="familia.html">Familia y amigos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenido Principal -->
+    <br>    
+    <br>
+    <div class="container">
+        <div class="form-container">
+            <h2>Evalúa mi página</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellidos" required>
+                <br><label>Sexo:</label>
+                <label>
+                    <input type="checkbox" placeholder="Masculino" name="CheckboxGroup1" value="casilla de verificación " id="CheckboxGroup1_0" required>
+                    Masculino </label>
+                <label>
+                    <input type="checkbox" placeholder="Femenino" name="CheckboxGroup1" value="casilla de verificación " id="CheckboxGroup1_1" required>
+                    Femenino</label>
+                    <br>
+                    <input type="text" placeholder="CURP" required>
+                    <input type="text" placeholder="Dirección" rows="3" required>
+                    <input type="text" placeholder="Estado civil" required>
+                    <input type="text" placeholder="Nivel de estudios" required>
+                    <input type="text" placeholder="Hobbies" rows="2" required>
+                    <br><br>
+                <label>Provincia:</label>
+                <select name="Dia" size="1" id="select">
+                    <option> </option>
+                    <option>Aguascalientes</option>
+                    <option>Baja California</option>
+                    <option>Baja California Sur</option>
+                    <option>Campeche</option>
+                    <option>Chiapas</option>
+                    <option>Chihuahua</option>
+                    <option>Ciudad de México</option>
+                    <option>Coahuila</option>
+                    <option>Colima</option>
+                    <option>Durango</option>
+                    <option>Estado de México</option>
+                    <option>Guanajuato</option>
+                    <option>Guerrero</option>
+                    <option>Hidalgo</option>
+                    <option>Jalisco</option>
+                    <option>Michoacán</option>
+                    <option>Morelos</option>
+                    <option>Nayarit</option>
+                    <option>Nuevo León</option>
+                    <option>Oaxaca</option>
+                    <option>Puebla</option>
+                    <option>Querétaro</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí</option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option>
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option>
+                    <option>Otro...</option>
+                </select>
+                <br />
+                <input type="file" name"archivo" size="30" maxlength="100" tabindex="10" accesskey="f" style="text-align: center;">
+
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Opine sobre mi página" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+                <button type="reset">Restablecer</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="divider"></div>
+    <div class="container">
+        <div class="contacto">
+            <img src="IMG_6203.jpeg" alt="Foto de perfil">
+            <h2>Contacto</h2>
+            <p>Nombre: <strong>Axel Arath Escobedo Reyes</strong></p>
+            <p class="email">Correo: escobedoreyesaxelarath@gmail.com</p>
+            <p class="telefono">Teléfono: +1 657 465 4280</p>
+            <a href="escobedoreyesaxelarath@gmail.com" class="boton">Enviar Correo</a>
+        </div>
+    </div>
+
+    
+    <div class="contact-icons">
+        <a href="https://www.facebook.com/share/1APupftjyD/?mibextid=wwXIfr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.40.45 a.m..png" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/in/escobedo-reyes-axel-arath-a57084307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.43.06 a.m..png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/axelescrey?igsh=MXRvZHdlY2dtNm8ybQ%3D%3D&utm_source=qr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.44.32 a.m..png" alt="Instagram"></a>
+      </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <img src="tecnm.png" alt="Logo" class="footer-logo">
+          <p>© 2025 Todos los derechos reservados.    Tecnológico Nacional de México  |  Instituto Tecnológico de Puebla</p>
+      </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

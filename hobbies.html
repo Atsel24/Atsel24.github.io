@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículum - Axel Arath Escobedo Reyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #cadcb6;
+        font-family: Arial, sans-serif;
+      }
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
+      .text-section {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .image-section img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .highlight-text {
+        color: #7b8f6a;
+        font-weight: bold;
+      }
+      .highlight-text2 {
+        color: #0f110e;
+        font-weight: bold;
+      }
+      .navbar-nav {
+            display: flex;
+            justify-content: space-evenly; /* Distribuir los elementos de forma equitativa */
+            width: 100%;
+        }
+      .navbar-nav .nav-link {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .logo {
+        height: 40px;
+      }
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+      .contact-icons {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .contact-icons a img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+      .contact-icons a img:hover {
+        transform: scale(1.1);
+      }
+      .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contenedor-imagen {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: auto;
+        }
+
+        .tarjeta {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+
+        .contenedor-imagen:hover .tarjeta {
+            transform: rotateY(180deg);
+        }
+
+        .frente, .dorso {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .frente img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .dorso {
+            background-color: #7f9665;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            transform: rotateY(180deg);
+        }
+
+      .footer {
+        width: 100%;
+        background-color: #658433; /* Color de fondo del footer */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px; /* Espacio entre el carrusel y el footer */
+        position: relative;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        height: 20px; /* Tamaño pequeño del logo */
+        margin-right: 10px;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="ProyectoFinal.html">
+          <img src="25694.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="horario.html">Horario</a></li>
+            <li class="nav-item"><a class="nav-link" href="estudios.html">Estudios realizados</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="datos.html">Datos Personales</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="familia.html">Familia y amigos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenido Principal -->
+    <div class="galeria">
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="acf03067d755ef7afeb45926acaec1e3.jpg" alt="Imagen 1">
+                </div>
+                <div class="dorso">
+                    <p><strong>Programar</strong><br>Es mi hobbie favorito, en especial cuando programo cosas que desde pequeño quería hacer, por ejemplo páginas web, o proximamente una aplicación de celular. Mis áreas favoritas del momento son la programación web, las bases de datos y la ciberseguridad.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="6e08d0bd85a4e54e506c3c71a79c2a1d.jpg" alt="Imagen 2">
+                </div>
+                <div class="dorso">
+                    <p><strong>Ejercicio</strong><br>Empecé con este hábito en 2do de secundaria ya que en ese entonces era muy flaco, sin embargo, inmediatamente me encantó y desde entonces procuro no dejar de hacerlo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="4fe6cda3a4923e910a597791af734693.jpg" alt="Imagen 3">
+                </div>
+                <div class="dorso">
+                    <p><strong>Fútbol soccer</strong><br>Es mi hobbie favorito, lo he practicado desde que tengo memoria y me encanta. Actualmente juego menos que antes, pero es una actividad que me ayuda a relajarme y sacar mi estrés acumulado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="62250404ea62180a7008fcde7d2365e4.jpg" alt="Imagen 4">
+                </div>
+                <div class="dorso">
+                    <p><strong>Leer</strong><br>Es un hobbie que empecé a hacer hace poco tiempo, sin embargo ya le agarré el gusto y de hecho me ha ayudado en diferentes ámbitos de mi vida, como en mejorar mi ortografía, mi vocabulario, entre otras cosas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="2e35a9509310bd962aedb4b05c631bce.jpg" alt="Imagen 5">
+                </div>
+                <div class="dorso">
+                    <p><strong>Escuchar música</strong><br>La música me encanta, casi todos los géneros existentes me gustan, los escucho dependiendo mi estado de ánimo del momento.<br></p>
+                    <a href="https://youtu.be/R95ILhksGt8?si=OKlATP4YzEODMleq" class="btn btn-primary" style="background-color: #68715f; font-size: 5px; padding: 5px 10px; border-color: #68715f; margin-top: 10px;text-align: center;">Click para escuchar mi canción favorita</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="18d5f09c2b0f490761f0eda2684de610.jpg" alt="Imagen 6">
+                </div>
+                <div class="dorso">
+                    <p><strong>Videojuegos</strong><br>Actualmente ya no lo hago mucho, pero en pandemia fue un hobbie que hice mucho y que me ayudó a distraerme cuando no podíamos salir.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="6c0255bc2a83b5146ee5d6b22f15f1ba.jpg" alt="Imagen 7">
+                </div>
+                <div class="dorso">
+                    <p><strong>Cafeterías</strong><br>Esta es una actividad que hago con mi novia, que de hecho nos gusta mucho porque platicamos y nos distraemos un poco de lo que pasa en nuestra vida. Obviamente nos gusta mucho el café.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="46a468888fc26ec0c09105feb90226c6.jpg" alt="Imagen 8">
+                </div>
+                <div class="dorso">
+                    <p><strong>Pádel/Tennis</strong><br>Es un deporte que mi novia y yo reciéntemente descubrimos y nos gustó mucho, sin embargo, el pádel no lo practicamos con frecuencia porque es caro, pero estamos buscando opciones para hacerlo con mayor frecuencia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="f1469b0cb210fd209d925743a487ed16.jpg" alt="Imagen 9">
+                </div>
+                <div class="dorso">
+                    <p><strong>Football</strong><br>Es un deporte que hace un año me empezó a interesar, actualmente lo practico y me gusta mucho, me ayudó mucho a mejorar mi físico e incluso mi rendimiento en el fútbol soccer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="18464bc869fa49ab217b43d88251a2b2.jpg" alt="Imagen 10">
+                </div>
+                <div class="dorso">
+                    <p><strong>Viajar a lugares remotos</strong><br>Me encanta tener contacto con la naturaleza, principalmente por los hermosos paisajes que ésta te puede regalar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="c39decbc716c42b6d538081ae5d48756.jpg" alt="Imagen 10">
+                </div>
+                <div class="dorso">
+                    <p><strong>Acampar</strong><br>Éste hobbie va de la mano con el de viajar a lugares remotos, esta actividad en particular me gusta mucho, es algo que he hecho desde pequeño con amigos y familiares.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-imagen">
+            <div class="tarjeta">
+                <div class="frente">
+                    <img src="0024713a0a0a48cddc4bd85e160727c5.jpg" alt="Imagen 10">
+                </div>
+                <div class="dorso">
+                    <p><strong>Ir de compras</strong><br>Es un gusto que adquirí muy recientemente, antes no me gustaba en lo absoluto, sin embargo, me di cuenta que consentirme con cosas así me motiva a seguir echándole ganas a la escuela y a trabajar arduamente para darme libertades como ésta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contact-icons">
+      <a href="https://www.facebook.com/share/1APupftjyD/?mibextid=wwXIfr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.40.45 a.m..png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/escobedo-reyes-axel-arath-a57084307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.43.06 a.m..png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/axelescrey?igsh=MXRvZHdlY2dtNm8ybQ%3D%3D&utm_source=qr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.44.32 a.m..png" alt="Instagram"></a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <img src="tecnm.png" alt="Logo" class="footer-logo">
+          <p>© 2025 Todos los derechos reservados.    Tecnológico Nacional de México  |  Instituto Tecnológico de Puebla</p>
+      </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

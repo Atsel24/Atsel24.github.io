@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currículum - Axel Arath Escobedo Reyes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f5f7ed;
+        font-family: Arial, sans-serif;
+      }
+      .content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
+      .text-section {
+        flex: 1;
+        padding-left: 20px;
+      }
+      .image-section img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .highlight-text {
+        color: #7b8f6a;
+        font-weight: bold;
+      }
+      .highlight-text2 {
+        color: #0f110e;
+        font-weight: bold;
+      }
+      .navbar-nav {
+            display: flex;
+            justify-content: space-evenly; /* Distribuir los elementos de forma equitativa */
+            width: 100%;
+        }
+      .navbar-nav .nav-link {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+      .logo {
+        height: 40px;
+      }
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+      .contact-icons {
+        position: fixed;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+      }
+      .contact-icons a img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+      .contact-icons a img:hover {
+        transform: scale(1.1);
+      }
+
+      .footer {
+        width: 100%;
+        background-color: #658433; /* Color de fondo del footer */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px; /* Espacio entre el carrusel y el footer */
+        position: relative;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        height: 20px; /* Tamaño pequeño del logo */
+        margin-right: 10px;
+    }
+
+    .footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+    .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .contenedor-imagen {
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+            margin: auto;
+        }
+        .card {
+            width: 200px; /* Reducimos el tamaño de las tarjetas */
+            margin: auto; /* Centramos las tarjetas en su columna */
+        }
+        .card img {
+            height: 120px; /* Ajustamos la altura de la imagen para evitar que ocupen mucho espacio */
+            object-fit: cover;
+        }
+
+        .divider {
+            width: 80%;
+            height: 5px;
+            background-color: #658433;
+            margin: 40px auto;
+            border-radius: 5px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="ProyectoFinal.html">
+          <img src="25694.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="horario.html">Horario</a></li>
+            <li class="nav-item"><a class="nav-link" href="estudios.html">Estudios realizados</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="datos.html">Datos Personales</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="familia.html">Familia y amigos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenido Principal -->
+
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 80px;color:#7b8f6a; text-align: center;">Kinder</h1>
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Tarjetas -->
+            <div class="col">
+                <div class="card">
+                    <img src="IMG_0960.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sor Juana</h5>
+                        <p class="card-text">Pequeño kinder ubicado en Amalucan donde cursé mis 3 años de preescolar.</p>
+                        <a href="https://maps.app.goo.gl/BDQWdbaE1zkSEnwe6?g_st=com.google.maps.preview.copy" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="8ca46c20bf74470ec9b1b97edb6da9f6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglés</h5>
+                        <p class="card-text">Aprendí lo básico de inglés, aprendí los colores, los números y algunas palabras.</p>
+                        <a href="https://youtu.be/dY2dqUVeI-o?si=zLuO3KhxNpMmVSFp" class="btn btn-primary btn-sm">Nivel A1</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="kinderobra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Obras de teatro</h5>
+                        <p class="card-text">Realicé varias obras de teatro que me ayudaron a trabajar la ansiedad social.</p>
+                        <a href="https://youtu.be/7efhOKXfBg4?si=_gr_oDPOYlMi2yg-" class="btn btn-primary btn-sm">Obra de teatro</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="kinder1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boxeo</h5>
+                        <p class="card-text">Participé en una recreación de las escenas de "Boxeo" de la película Rocky.</p>
+                        <a href="https://maps.app.goo.gl/FNjAXFeLpCGZKeq79" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="kinder6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduación</h5>
+                        <p class="card-text">Tuve mi ceremonia de graduación, bailé mi vals con mi compañera Aislin.</p>
+                        <a href="https://maps.app.goo.gl/FNjAXFeLpCGZKeq79" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 80px;color:#7b8f6a; text-align: center;">Primaria</h1>
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Tarjetas -->
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 7.59.44 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Licenciado Vicente Lombardo Toledano</h5>
+                        <p class="card-text">Primaria ubicada en Sanctorum, en donde concluí con un promedio de 9.8 mi educación primaria.</p>
+                        <a href="https://maps.app.goo.gl/hpersibNKP6YNNn18" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.02.03 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aprendí a manejar</h5>
+                        <p class="card-text">En primaria, mi abuelo me dio clases de manejo y aprendí a andar en la colonia, pero solo podía llegar a 2da, sino mi abuelo me regañaba por ir rápido, pero lo disfrutaba mucho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.03.46 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mi mamá me rapó</h5>
+                        <p class="card-text">En un acto de desesperación mi madre nos rapó pelones a mi hermano y a mi, luego de varias llamadas de atención de la escuela por no llevar el corte adecuado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.06.54 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Excursión</h5>
+                        <p class="card-text">La escuela nos llevó de excursión en semana santa a un balneario llamado "Agua azul", solo he tenido dos excursiones en mi vida.</p>
+                        <a href="https://maps.app.goo.gl/eS1EfZNNJCcgUvfb6" class="btn btn-primary btn-sm">Dirección de balneario</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 7.57.15 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduación</h5>
+                        <p class="card-text">Me gradué y mi abuela me regaló una cadenita de buena suerte, fue muy especial para mi, no me la quito desde entonces, solo que he tenido que mandarla a agrandar..</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 80px;color:#7b8f6a; text-align: center;">Secundaria</h1>
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Tarjetas -->
+            <div class="col">
+                <div class="card">
+                    <img src="sec1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Unidad Educativa Frida Kahlo</h5>
+                        <p class="card-text">Instituto público ubicado en Cuautlancingo,Puebla.</p>
+                        <a href="https://maps.app.goo.gl/knk5dHv3vhSnYBSi9" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.19.53 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fútbol</h5>
+                        <p class="card-text">En secundaria era muy bueno en fútbol, de hecho concursamos en los nacionales y quedamos en semifinal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.23.10 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Novia</h5>
+                        <p class="card-text">En secundaria me hice amigo de la persona que ahora es mi novia, seguimos juntos.</p>
+                        <a href="https://www.instagram.com/nabila.moreno?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary btn-sm">Su instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.18.38 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Amigo</h5>
+                        <p class="card-text">Ahí conocí a uno de mis amigos más cercanos de la actualidad.</p>
+                        <a href="https://www.instagram.com/bryan_skiny?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary btn-sm">Su instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.26.38 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduación</h5>
+                        <p class="card-text">Me gradué con 9.6 de promedio, fui uno de los más altos, y concluí una etapa confusa de mi vida pero que disfruté muchísimo.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 80px;color:#7b8f6a; text-align: center;">Bachiller</h1>
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Tarjetas -->
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.43.30 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachillerato Frida Kahlo</h5>
+                        <p class="card-text">Fui al Bachiller en la misma unidad educativa que en Secundaria.</p>
+                        <a href="https://maps.app.goo.gl/BDQWdbaE1zkSEnwe6?g_st=com.google.maps.preview.copy" class="btn btn-primary btn-sm">Dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="facu.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglés</h5>
+                        <p class="card-text">Acudí a clases de inglés en la facultad de lenguas BUAP en donde llegué con éxito al nivel B1.</p>
+                        <a href="https://maps.app.goo.gl/7dZ2EAvmGirJnFMb7" class="btn btn-primary btn-sm">Dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.38.20 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cocina</h5>
+                        <p class="card-text">Nos dieron clases de cocina en donde aprendí a hacer diferentes platillos como sushi, pizza, pastel, helado, pasta desde 0,  etc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.39.12 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volleyball</h5>
+                        <p class="card-text">Aprendí a jugar volleyball y entré al equipo de la escuela, sin embargo, duré 3 meses porque me volví a meter al equipo de fútbol.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="IMG_6038.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduación</h5>
+                        <p class="card-text">Me gradué con promedio de 9.5 y aprobé el examen del ITP y de BUAP. Ahí me di cuenta que soy capaz de hacer lo que sea que me proponga.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 80px;color:#7b8f6a; text-align: center;">Universidad</h1>
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3 justify-content-center">
+            <!-- Tarjetas -->
+            <div class="col">
+                <div class="card">
+                    <img src="037abb6f78e8cf93ddfe28a920626cf6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Instituto Tecnológico de Puebla</h5>
+                        <p class="card-text">Universidad donde estoy estudiando Ingeniería en TIC.</p>
+                        <a href="https://maps.app.goo.gl/FNjAXFeLpCGZKeq79" class="btn btn-primary btn-sm">Abrir dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.48.31 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto</h5>
+                        <p class="card-text">Ahorré las becas que me dieron en bachiller, y con ayuda de mi papá y abuelo me pude comprar un coche para la universidad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.51.37 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Páginas web</h5>
+                        <p class="card-text">Hasta ahora lo que más me ha gustado de la carrera es aprender a hacer páginas web. Me costó aprenderlo pero en cuanto le agarré se me facilitó.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.54.17 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Viaje</h5>
+                        <p class="card-text">Viajé por primera vez en avión a una playa en LA, fue un viaje que me ayudó a conectar con mi papá.</p>
+                        <a href="https://maps.app.goo.gl/WLQoNYpm3vKk97j67" class="btn btn-primary btn-sm">Dirección</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="Captura de pantalla 2025-03-26 a la(s) 8.57.01 p.m..png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Calificaciones</h5>
+                        <p class="card-text">Me he esforzado para mantener buenas calificaciones y graduarme con el mejor promedio posible, estoy orgulloso de mi.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="contact-icons">
+      <a href="https://www.facebook.com/share/1APupftjyD/?mibextid=wwXIfr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.40.45 a.m..png" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/escobedo-reyes-axel-arath-a57084307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.43.06 a.m..png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/axelescrey?igsh=MXRvZHdlY2dtNm8ybQ%3D%3D&utm_source=qr" target="_blank"><img src="Captura de pantalla 2025-03-13 a la(s) 7.44.32 a.m..png" alt="Instagram"></a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <img src="tecnm.png" alt="Logo" class="footer-logo">
+          <p>© 2025 Todos los derechos reservados.    Tecnológico Nacional de México  |  Instituto Tecnológico de Puebla</p>
+      </div>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
